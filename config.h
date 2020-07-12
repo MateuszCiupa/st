@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Cascadia Mono:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -96,24 +96,24 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#1E1E1E", // "black"
+	"#F44747", // "red"
+	"#608B4E", // "green"
+	"#D7BA7D", // "yellow"
+	"#569CD6", // "blue"
+	"#646695", // "magenta"
+	"#4EC9B0", // "cyan"
+	"#ACADB1", // "white"
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#808080", // "black"
+	"#D16969", // "red"
+	"#B5CEA8", // "green"
+	"#DCDCAA", // "yellow"
+	"#9CDCFE", // "blue"
+	"#C586C0", // "magenta"
+	"#8ADAF1", // "cyan"
+	"#E0E3E7", // "white"
 
 	[255] = 0,
 
@@ -139,7 +139,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
